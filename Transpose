@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+main(){
+	int arr[2][3]={1,2,3,4,5,6},trans[3][2];
+	
+	cout<<endl<<endl;
+	
+	for(int i=0;i<2;i++){
+		for(int j=0;j<3;j++){
+			cout<<arr[i][j]<<"\t";
+			trans[j][i]=arr[i][j];///////////    MAIN LOGIC 
+		}// j
+		cout<<endl;
+	}// i
+	
+	cout<<endl<<endl<<endl<<endl;
+	
+	for(int i=0;i<3;i++){
+		for(int j=0;j<2;j++){
+			cout<<trans[i][j]<<"\t";
+		}// j
+		cout<<endl;
+	}// i
+	
+}//main
